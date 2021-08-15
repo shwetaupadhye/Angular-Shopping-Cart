@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --white: #fff;
+    --black: #222;
+    --pink: #f60091;
+    --grey: #444;
+    --grey2: #959595;
+    --grey-alt: #d1e2e9;
+    --yellow: #ffd800;
+    --green: #59b210;
+  }
+.footer {
+    background-color: black;
+    padding: 15px ;
+    line-height: 2rem;
+  }
+  
+  .footer-center span {
+    margin-right: 1rem;
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: var(--white);
+  }
+  
+  .footer-center a:link,
+  .footer-center a:visited {
+    display: block;
+    color: var(--grey2);
+    font-size: 20px;
+    transition: 0.6s;
+  }
+  
+  .footer-center a:hover {
+    color: rgb(240, 55, 30);
+  }
+  
+  .footer-center div {
+    color: var(--grey2);
+    font-size: 1.4rem;
+  }
+  
+  .footer-center h3 {
+    font-size: 20px;
+    font-weight: 250;
+    margin-bottom: 1rem;
+    color: var(--pink);
+  }
+  
+  @media only screen and (max-width: 998px) {
+    .footer-container {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 2rem;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .footer-container {
+      grid-template-columns: 1fr;
+      row-gap: 2rem;
+    }
+  }
